@@ -1,9 +1,32 @@
-### Github Tutorial
 
-####1. [How to Host Files on Github](http://www.labnol.org/internet/free-file-hosting-github/29092/)
+# PROJET DE MAJEURE
 
-####2. [Github Gists for Non-Developers](http://www.labnol.org/internet/github-gist-tutorial/28499/)
+#### équipe 1 - VIGNAUD - MEUNIER - GRESLE
 
-Append ?raw=true to any file URL on Github to get the direct link.
+***
+
+*Introduction* : 
+
+***
+
+1. *Installation et configuration ESXi :*
+
+Dans un premier temps, nous devons créer des serveurs ESXi qui auront pour rôle de gérer l'exécution des machines virtuelles et de leur allouer les ressources nécessaires en fonction de leurs besoin.
+
+* Nous avons tout d'abord installé les images des serveurs qui étaient présentes dans le stockage *lunlibrary* de VMWare
+
+* Nous avons ensuite configuré les serveurs ESXi, premièrement,  nous avons configuré les disques durs en mode *Thin* afin de pouvoir mutualiser les ressources entre tous les groupes
+
+* Ensuite nous avons mis 4 cartes réseau sur les machines de virtualisation, de façon à ce que celles cis puissent communiquer avec tous les port groupe (qui sont au nombre de 4 également)
+
+* Nous avons configuré les adresses IP d’accès à chaque instance pour qu'elles appartiendra au réseau de management (de la forme 192.168.17.XX/XX)
+
+* Le nom de domaine pour notre groupe est : *4eti-01.tpv.cpe.localdomain* 
+
+* Nous avons finalement :
+
+
+
+
 
 ![image test](https://github.com/GuillaumeGrs/projetmajeure/blob/master/MicrosoftTeams-image.png)
