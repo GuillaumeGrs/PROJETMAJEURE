@@ -11,9 +11,9 @@
 
 1. *Installation et configuration ESXi :*
 
-Dans un premier temps, nous devons créer des serveurs ESXi qui auront pour rôle de gérer l'exécution des machines virtuelles et de leur allouer les ressources nécessaires en fonction de leurs besoin.
+Dans un premier temps, nous devons créer deux hyperviseurs ESXi (type 1) qui auront pour rôle d'orchestrer l'exécution des différentes machines virtuelles et de leur allouer les ressources nécessaires en fonction de leurs besoin.
 
-* Nous avons tout d'abord installé les images des serveurs qui étaient présentes dans le stockage *lunlibrary* de VMWare
+* Nous avons tout d'abord récupéré les images nécessaires (ESXi 7 et Windows Server 2012) qui étaient présentes dans le stockage *lunlibrary* du datacenter.
 
 * Nous avons ensuite configuré les serveurs ESXi, premièrement,  nous avons configuré les disques durs en mode *Thin* afin de pouvoir mutualiser les ressources entre tous les groupes
 
