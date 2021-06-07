@@ -1,11 +1,11 @@
 
-# PROJET DE MAJEURE
+# PROJET DE MAJEURE - Virtualisation & Cloud
 
 #### équipe 1 - VIGNAUD - MEUNIER - GRESLE
 
 ***
 
-*Introduction* : 
+*Introduction* : L'objectif de ce projet est d'utiliser différentes fonctionnaliés de VMware vSphere afin de déployer un cloud privé. Le data center de CPE est utilisé comme infrastucture sur laquelle le cluster de virtualisation sera utilisé. L'architecture globale développée est la suivante:
 
 ***
 
