@@ -29,4 +29,3 @@ Dans un premier temps, nous devons créer des serveurs ESXi qui auront pour rôl
 
 
 
-![image test](https://github.com/GuillaumeGrs/projetmajeure/blob/master/MicrosoftTeams-image.png)
