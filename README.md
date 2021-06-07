@@ -28,8 +28,12 @@ Dans un premier temps, nous devons créer deux hyperviseurs ESXi (type 1) qui au
 
 
 
+2. *Configuration du stockage NAS*
 
 * Un serveur NAS a été mis en place avec l'outil TrueNAS son adresse sur le réseau de management est 192.168.17.62/24. L'interface réseau NAS qui nous a été attribuée sur le réseau de stockage est 172.16.1.1/24 (em2). Il s'agit d'un réseau de stockage partagé qui nous servira pour la suite, cette interface em2 est connectée sur notre réseau de stockage. On attribue le stockage à nos deux ESXi via un adaptateur ISCSI qui "écoute" le NAS sur l'interface 172.16.1.254 pour ESXi1 et 172.16.1.253 pour ESXi2.
+
+
+3. *Mise en place du contrôleur de domaine*
 
 * Sur ESXi1, nous avons créé une première machine virtuelle sous Windows Serveur 2012, sur laquelle nous avons installé les rôles et les fonctionnalités suivantes pour installer un controleur de domaine:
                                      - DNS (la recherche inversé a été 
