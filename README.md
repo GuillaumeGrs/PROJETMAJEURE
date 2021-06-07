@@ -45,7 +45,6 @@ Dans un premier temps, nous devons créer deux hyperviseurs ESXi (type 1) qui au
 
 
 
-* Nous avons finalement :
 
 
 
