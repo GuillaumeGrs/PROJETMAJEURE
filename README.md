@@ -23,7 +23,7 @@ Dans un premier temps, nous devons créer deux hyperviseurs ESXi (type 1) qui au
 
 * Le plan d'adressage utilisé pour le premier ESXi est le suivant, les adresses Ip statiques ont été configurées de la manière suivante:
 
-
+![plan](https://github.com/GuillaumeGrs/projetmajeure/blob/master/Capture.JPG)
 
 
 
