@@ -5,7 +5,9 @@
 
 ***
 
-*Introduction* : L'objectif de ce projet est d'utiliser différentes fonctionnaliés de VMware vSphere afin de déployer un cloud privé. Le data center de CPE est utilisé comme infrastucture sur laquelle le cluster de virtualisation sera utilisé. L'architecture globale développée est la suivante:
+*Introduction* : L'objectif de ce projet est d'utiliser différentes fonctionnaliés de VMware vSphere afin de déployer un cloud privé. Le data center de CPE est utilisé comme infrastucture sur laquelle le cluster de virtualisation sera utilisé. L'architecture globale, ainsi que notre plan d'adressage sont représentés sur le schéma suivant:
+
+![plan-intro](https://github.com/GuillaumeGrs/projetmajeure/blob/master/PLAN_INTRO.PNG)
 
 ***
 
