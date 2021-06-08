@@ -42,8 +42,10 @@ Dans un premier temps, nous devons créer deux hyperviseurs ESXi (type 1) qui au
 
 * A présent l'active directory est mis en place, des utilisateurs "classiques" sont créés. Avec la mise en place de l'ensemble AD DS et DNS, il est possible de se connecter à n'importe quel utilisateur ou administrateur sur n'importe quelle machine cliente (qui tournent également sous Windows Serveur). Pour cela, les machines clientes ont été ajoutées dans notre domaine 4eti-01.tpv.cpe.localdomain.
     
+    
+4. *Déploiement de vCenter*
 
-
+parler de drs, création de cluster, maintenance pour config des hotes
 
 
 
