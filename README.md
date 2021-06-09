@@ -50,12 +50,15 @@ Dans un premier temps, nous devons créer deux hyperviseurs ESXi (type 1) qui au
 * Dans cette partie, nous avons déployé vCenter afin de pouvoir gérer nos machines virtuelles et nos machines hôtes directement depuis celui-ci. Un cluster a été créé et les ESXi ont été configurés. Nous avons quelques difficultés sur cette partie (l'installation de vCenter) qui nous a fait perdre du temps: nous avions connecté la VM cliente sur laquelle vCenter est déployé sur le réseau de management, donc la mauvaise adresse de DNS était jointe (celle de l'école et pas celle de notre Windows Serveur).
 * Ensuite, une fois vCenter déployé, nous avons migré les VMs sur le premier ESXi afin de mettre le second en maintenance pour sa configuration, et vis-versa. Le cluster est ainsi créé. Le DRS permet de maîtriser la répartion des charges sur les ESXi du cluster: les VMs sont migrées automatiquement de l'un à l'autre selon la consommation des ressources. Pour accéder 
 * L'objectif suivant était de créer un unique Distributed Switch qui vient remplacer les standard vSwitch créés précédement. Pour cela 3 nouveaux groupes de ports sont créés: un pour le réseau stockage, pour le réseau Prod et un dernier pour Vmotion: ils sont ajoutés au Distributed Switch. Les ports des VMs de ces réseaux sont aussi migrés.
-* Une nouvelle machine Linux a été déployée, iso linux sur esxi et pas sur vcenter image
+* Une nouvelle machine Linux a été déployée, iso linux sur esxi et pas sur vcenter image.
 
 5. *vSphere 7.0 Update 2 ESXi Upgrade*
 
-* A ce stade du projet, à partir d'une image iso, on met à jour la version VMware vSphere vers une version plus récente, la 7.0.2. Cela est réalisé dans vCenter dans lequel l'image est importé, puis une "baseline upgrade" est créée: cela nous permet alors d'appliquer la mise à jour sur notre cluster et tout est géré automatiquement pendant celle-ci (maintenance, migration des VMs...)
+* A ce stade du projet, à partir d'une image iso, on met à jour la version VMware vSphere vers une version plus récente, la 7.0.2. Cela est réalisé dans vCenter dans lequel l'image est importée, puis une "baseline upgrade" est créée: cela nous permet alors d'appliquer la mise à jour sur notre cluster et tout est géré automatiquement pendant celle-ci (maintenance, migration des VMs...)
 
+6. *Déploiement du NAT réseau Prod*
+
+* Les machines virtuelles clientes sont connectées à un seul réseau: seulement celui de Prod. Or ces machines doivent aussi avoir accès à internet: pour cela une translation d'adresse IP doit avoir lieu. Dans les paramètres d'accès à distance, le réseau de Prod est déclaré en tant qu'interne et celui de management en externe sur notre Windows Serveur. Malgré les paramètrages, cette partie n'est pas encore fonctionnelle.
 
 
 
