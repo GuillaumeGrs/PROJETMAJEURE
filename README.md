@@ -61,5 +61,7 @@ Dans un premier temps, nous devons créer deux hyperviseurs ESXi (type 1) qui au
 * Les machines virtuelles clientes sont connectées à un seul réseau: seulement celui de Prod. Or ces machines doivent aussi avoir accès à internet: pour cela une translation d'adresse IP doit avoir lieu. Dans les paramètres d'accès à distance, le réseau de Prod est déclaré en tant qu'interne et celui de management en externe sur notre Windows Serveur. Malgré les paramètrages, cette partie n'est pas encore fonctionnelle.
 
 
+*Conclusion* : Ce projet nous a permis d'apprendre énormément sur les outils réseaux, l'administration système et l'environnement VMware. Même si nous avons manqué de temps pour mettre en place toute les fonctionnalités prévues, notre cloud privé est fonctionnel.
+
 
 
